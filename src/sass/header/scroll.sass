@@ -1,0 +1,57 @@
+.scroll_block
+    background-color: #121212
+    width: 100%
+    padding: 1% 20% 1% 20%
+
+    display: flex
+    justify-content: space-between
+    align-items: center
+    //height: 30px
+    &__order_btn
+        width: 10vw
+        height: 5vh
+        padding: 15px 30px
+        border-radius: 30px
+        color:#fff
+        font-size: 15px
+        text-align:center
+        background-image: linear-gradient(-90deg, #451046 0%, #DF5950 100%)
+        border: none
+        transition: all 200ms ease-out
+        cursor: pointer
+        &:hover
+            box-shadow:10px 0px 10px #5d265e,-10px 0px 10px #df7870
+    &__count 
+        width: 13vw
+        text-align: left
+        &__people
+            display: flex
+            justify-content: space-between
+            &__text
+                color: #646464
+                font-size: 16px
+            &__number
+                font-size: 16px
+                font-weight: bold
+    &__scroll
+        display: flex
+        flex-direction: column
+        justify-content: center
+        &__people
+            width: 15vw
+            display: flex
+            justify-content: space-between
+            align-items: center
+    & progress
+        width: 30vw
+        height: 0.5vh
+        background: #eee
+        border-radius: none
+        &::-webkit-progress-bar 
+            background: #eee
+        &::-webkit-progress-value 
+            background: linear-gradient(to right, #DF5950, #451046)
+        &:hover
+            background: linear-gradient(to right, #db4a40, #430944)
+    
+        
